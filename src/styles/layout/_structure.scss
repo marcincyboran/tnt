@@ -1,0 +1,7 @@
+.container {
+  max-width: var(--con-max-width);
+  padding-left: var(--con-padding);
+  padding-right: var(--con-padding);
+  height: 100%;
+  @include centerBlock;
+}

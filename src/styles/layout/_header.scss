@@ -1,0 +1,12 @@
+.navigationBar {
+  height: 7.2rem;
+  border-bottom: 1px solid var(--color-blue-lighter);
+  color: var(--color-white);
+  font-size: 2.6rem;
+  font-weight: 600;
+
+  &__content {
+    display: flex;
+    align-items: center;
+  }
+}

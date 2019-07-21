@@ -1,0 +1,34 @@
+<h2 class="heading-primary u-text-center">O zawodzie Testera Oprogramowania</h2>
+<div class="about">
+
+  <ul class="about__left">
+      <li *ngFor="let el of test; let i = index" [ngClass]="{'active':activeIndex === i}" (click)="onCardChange(i)">
+          {{ el.question }}
+      </li>
+  </ul>
+
+  <div class="about__right">
+    <ng-container *ngFor="let el of test; let i = index">
+      <ng-container *ngIf="activeIndex === i">
+        <div class="about__right-header">
+          <figure>
+            <img class="about__img" src="" [alt]="el.who">
+          </figure>
+          <div>
+            {{ i }}
+            <h2 class="heading-secondary heading-secondary--white">{{ el.who }}</h2>
+            <p class="text-blue-light text-blue-light--small">{{ el.description }}</p>
+          </div>
+        </div>
+        <div class="about__right-body">
+          <blockquote>
+            Body {{ el.quote }}
+          </blockquote>
+        </div>
+      </ng-container>
+
+    </ng-container>
+  </div>
+
+</div>
+
