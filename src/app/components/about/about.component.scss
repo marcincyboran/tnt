@@ -43,13 +43,30 @@
 
   &__right {
     flex: 0 1 66%;
+    position: relative;
 
     &-header {
       background-color: var(--color-blue);
       padding: var(--padding);
+      display: flex;
+      align-items: center;
     }
     &-body {
       padding: 8rem var(--padding);
+      white-space: pre-line;
     }
+  }
+
+  & figure {
+    margin-right: 4rem;
+  }
+  
+  &__img {
+    width: 15rem;
+    height: 15rem;
+    display: inline-block;
+    border-radius: 50%;
+    border: 5px solid var(--color-yellow);
+    box-shadow: var(--box-shadow-yellow);
   }
 }
