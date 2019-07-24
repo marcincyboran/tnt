@@ -1,5 +1,6 @@
 .heading-primary {
     font-size: 5rem;
+    line-height: 1.3;
     font-weight: 900;
     color: var(--color-blue);
 
@@ -9,23 +10,25 @@
 .heading-secondary {
   font-size: 3rem;
   font-weight: 900;
+  line-height: 1.3;
   color: var(--color-blue);
 
   &--white {
-    font-weight: 800;
+    // font-weight: 800;
     color: var(--color-white);
   }
 }
 
 .text-blue-light {
   font-size: 2rem;
-  line-height: 1.6;
+  line-height: 1.5;
+  font-weight: bold;
   color: var(--color-blue-lighter);
 
   &--small {
-    font-size: 1.8rem;
-    font-weight: 700;
-    // line-height: 1.6;
+    font-size: 1.6rem;
+    font-weight: bold;
+    line-height: 1.5;
   }
   & .numbers {
     color: var(--color-white);
@@ -34,8 +37,9 @@
 }
 
 .text-info {
-  font-size: 1.1rem;
-  letter-spacing: .5px;
+  font-size: 1.2rem;
+  // letter-spacing: .5px;
+  font-weight: 600;
   line-height: 1.5;
   color: var(--color-blue-lighter);
 
@@ -53,6 +57,7 @@
 
 ul.list {
   font-size: 1.8rem;
+  font-weight: 600;
   list-style: none;
 
   li {
@@ -78,8 +83,9 @@ ul.list {
 .inputLabel {
   margin-top: 2rem;
   margin-bottom: 1rem;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 900;
+  line-height: 1.5;
   color: var(--color-blue-lighter);
   text-transform: uppercase;
 }
@@ -88,7 +94,7 @@ ul.list {
   position: relative;
   color:var(--color-gray);
   font-size: 1.2rem;
-  font-weight: 300;
+  font-weight: 600;
   margin-top: 3rem;
   margin-bottom: 4rem;
   padding-left: 3.5rem;
@@ -155,10 +161,26 @@ input[type="email"] {
   text-overflow: ellipsis;
 }
 
-input::-webkit-input-placeholder { color:var(--color-gray-border);}
-input:-moz-placeholder { color:var(--color-gray-border); } /* FF 4-18 */
-input::-moz-placeholder { color:var(--color-gray-border); } /* FF 19+ */
-input:-ms-input-placeholder { color:var(--color-gray-border); } /* IE 10+ */
+input::-webkit-input-placeholder {
+  color:var(--color-gray);
+  font-size: 1.4rem;
+  font-weight: 600;
+}
+input:-moz-placeholder {
+  color:var(--color-gray);
+  font-size: 1.4rem;
+  font-weight: 600;
+} /* FF 4-18 */
+input::-moz-placeholder {
+  color:var(--color-gray);
+  font-size: 1.4rem;
+  font-weight: 600;
+} /* FF 19+ */
+input:-ms-input-placeholder {
+  color:var(--color-gray);
+  font-size: 1.4rem;
+  font-weight: 600;
+} /* IE 10+ */
 
 .button {
       position: relative;
@@ -166,8 +188,9 @@ input:-ms-input-placeholder { color:var(--color-gray-border); } /* IE 10+ */
       display: inline-block;
       font-size: 1.6rem;
       font-weight: 600;
+      line-height: 1.5;
       color: var(--color-blue);
-      padding: 2.2rem;
+      padding: 1.6rem;
       letter-spacing: .5px;
       background-color: var(--color-yellow);
       border-radius: 5rem; // overkill

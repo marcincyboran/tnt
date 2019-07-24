@@ -12,28 +12,28 @@ export class AboutComponent implements OnInit {
     {
       question: 'Czym zajmuje się Tester Oprogramowania?',
       who: 'Marcin Cyboran',
-      description: 'Description 1',
+      description: 'Specjalista ds. jakości oprogramowania z 10-letnim stażem, akredytowany trener szkoleń ISTQB, współorganizator wydarzenia WrotQA.',
       // tslint:disable-next-line: max-line-length
       quote: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis tempore facilis, quos doloribus laudantium eveniet quia asperiores tenetur ipsam, consectetur eligendi atque, ipsa cum incidunt pariatur illo fuga quidem maxime in. Sit fugit ea harum molestias ipsam impedit illum aperiam neque, repellendus autem quis necessitatibus, doloremque, tenetur nisi minus at!'
     },
     {
       question: 'Czy praca testera, tyo tylko klikanie?',
       who: 'Łukasz Pietrucha',
-      description: 'Description 2',
+      description: 'Specjalista ds. jakości oprogramowania z 10-letnim stażem, akredytowany trener szkoleń ISTQB, współorganizator wydarzenia WrotQA.',
       // tslint:disable-next-line: max-line-length
       quote: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis tempore facilis, quos doloribus laudantium eveniet quia asperiores tenetur ipsam, consectetur eligendi atque, ipsa cum incidunt pariatur illo fuga quidem maxime in. Sit fugit ea harum molestias ipsam impedit illum aperiam neque, repellendus autem quis necessitatibus, doloremque, tenetur nisi minus at!'
     },
     {
       question: 'Kto może zostać testerem oprogramowania?',
       who: 'Person 3',
-      description: 'Description 3',
+      description: 'Specjalista ds. jakości oprogramowania z 10-letnim stażem, akredytowany trener szkoleń ISTQB, współorganizator wydarzenia WrotQA.',
       // tslint:disable-next-line: max-line-length
       quote: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis tempore facilis, quos doloribus laudantium eveniet quia asperiores tenetur ipsam, consectetur eligendi atque, ipsa cum incidunt pariatur illo fuga quidem maxime in. Sit fugit ea harum molestias ipsam impedit illum aperiam neque, repellendus autem quis necessitatibus, doloremque, tenetur nisi minus at!'
     },
     {
       question: 'Nie mam doświadczenia. Od czego zacząć?',
       who: 'Person 4',
-      description: 'Description 4',
+      description: 'Specjalista ds. jakości oprogramowania z 10-letnim stażem, akredytowany trener szkoleń ISTQB, współorganizator wydarzenia WrotQA.',
       // tslint:disable-next-line: max-line-length
       quote: 'Lorem ipsum dolor sit, amet consectetur adipisicing elit. Reiciendis tempore facilis, quos doloribus laudantium eveniet quia asperiores tenetur ipsam, consectetur eligendi atque, ipsa cum incidunt pariatur illo fuga quidem maxime in. Sit fugit ea harum molestias ipsam impedit illum aperiam neque, repellendus autem quis necessitatibus, doloremque, tenetur nisi minus at!'
     }
