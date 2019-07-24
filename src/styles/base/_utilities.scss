@@ -13,7 +13,7 @@
 }
 
 .u-bg-subtle {
-  background-color: var(--color-blue-subtle);
+  background-color: var(--color-gray-background2);
 }
 
 .u-text-center {
@@ -22,4 +22,16 @@
 
 .u-mb-small {
   margin-bottom: 1rem;
+}
+
+.u-no-margin {
+  margin: 0;
+}
+
+.u-no-padding {
+  padding: 0;
+}
+
+.u-overflow {
+  overflow: hidden;
 }

@@ -1,0 +1,48 @@
+:host {
+  display: block;
+  background-color: #eee;
+}
+
+.table {
+  position: relative;
+  background-color: var(--color-blue);
+  border-top-left-radius: var(--border-radius);
+  border-bottom-left-radius: var(--border-radius);
+  padding: 8.2rem 7.6rem;
+  margin-top: 8rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    left: 50%;
+    top: 0;
+    display: block;
+    height: 100%;
+    width: calc(50vw);
+    background-color: var(--color-blue);
+    z-index: -1;
+  }
+
+  display: flex;
+
+  &__left {
+    flex: 0 1 42%;
+  }
+
+  &__right {
+    flex: 1;
+    position: relative;
+  }
+
+  &__img {
+    display: block;
+    position: absolute;
+    top: -113%;
+    left: -20%;
+    width: 210%;
+  }
+
+  &__text {
+    margin-top: 6rem;
+  }
+}
