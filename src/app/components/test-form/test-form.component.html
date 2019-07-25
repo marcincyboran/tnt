@@ -1,5 +1,5 @@
 <form>
-    <h2 class="heading-secondary" [ngClass]="{'u-center u-mb-medium': centerHeading}">Wypełnij test predyspozycji</h2>
+    <h2 class="heading-secondary" [ngClass]="{'u-center u-mb-medium': centerHeading}" [ngStyle]="{'margin-bottom': (centerHeading) ? '4rem' : '2rem' }">Wypełnij test predyspozycji</h2>
     <label class="inputLabel" for="eMail_1">Adres e-mail</label>
     <input type="email" name="eMail_1" id="eMail_1" placeholder="jan.kowalski@gmail.com" required>
     <label class="custom-checkmark">

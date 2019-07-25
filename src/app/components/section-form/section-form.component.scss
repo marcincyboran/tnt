@@ -1,15 +1,14 @@
 .form-section {
     display: flex;
-    // align-items: flex-start;
 
     &__left {
-        flex: 0 1 33%;
+        flex: 1;
         position: relative;
     }
 
     &__right {
         position: relative;
-        flex: 1;
+        flex: 0 1 78rem;
         padding: 5rem 9rem 6rem;
         border-radius: var(--border-radius);
         box-shadow: var(--box-shadow-gray);
@@ -21,9 +20,9 @@
     &__img {
         display: block;
         position: absolute;
-        top: -20%;
-        left: -100%;
-        width: 210%;
-      }
+        top: -8rem;
+        left: -39rem;
+        width: 82rem;
+    }
 }
   
