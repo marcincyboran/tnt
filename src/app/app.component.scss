@@ -1,3 +1,12 @@
-:host > section:not(.navigationBar) {
+section:not(.navigationBar__content) {
   padding: 7rem 0;
+}
+
+section.section-table {
+  padding-bottom: 0;
+}
+
+section.section-form {
+  padding: 46rem 0 15rem;
+  margin-top: -31rem;
 }

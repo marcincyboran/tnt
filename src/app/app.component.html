@@ -1,20 +1,29 @@
-<section class="u-bg-blue navigationBar">
-  <header class="container navigationBar__content">
+<header class="u-bg-blue navigationBar">
+  <section class="container navigationBar__content">
     <app-header></app-header>
-  </header>
-</section>
-<section class="u-bg-blue">
+  </section>
+</header>
+<section class="section-dashboard u-bg-blue">
   <div class="container">
     <app-dashboard></app-dashboard>
   </div>
 </section>
-<section class="u-bg-subtle">
+<section class="section-about u-bg-subtle">
   <div class="container">
     <app-about></app-about>
   </div>
 </section>
-<section class="u-overflow">
+<section class="section-table u-overflow">
   <div class="container">
     <app-table></app-table>
   </div>
 </section>
+<!-- Dont make components for each section -->
+<section class="section-form u-bg-subtle u-overflow">
+  <div class="container">
+    <app-section-form></app-section-form>
+  </div>
+</section>
+<footer class="footer">
+  <app-footer></app-footer>
+</footer>

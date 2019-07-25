@@ -1,0 +1,12 @@
+<form>
+    <h2 class="heading-secondary" [ngClass]="{'u-center u-mb-medium': centerHeading}">Wypełnij test predyspozycji</h2>
+    <label class="inputLabel" for="eMail_1">Adres e-mail</label>
+    <input type="email" name="eMail_1" id="eMail_1" placeholder="jan.kowalski@gmail.com" required>
+    <label class="custom-checkmark">
+        <span>*TAK, chcę zapisać się do newslettera i otrzymywać informacje o sekretach testerskich, webinarach i
+            ofertach pracy na mój adres e-mail <span class="more">więcej</span></span>
+        <input type="checkbox" name="terms_1" id="terms_1">
+        <span class="checkmark"></span>
+    </label>
+    <button class="button" [ngClass]="{'button--full-width': fullButton }" type="submit">Rozpocznij test</button>
+</form>

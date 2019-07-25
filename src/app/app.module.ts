@@ -8,6 +8,9 @@ import { DashboardComponent } from './components/dashboard/dashboard.component';
 import { AboutComponent } from './components/about/about.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { TableComponent } from './components/table/table.component';
+import { TestFormComponent } from './components/test-form/test-form.component';
+import { SectionFormComponent } from './components/section-form/section-form.component';
+import { FooterComponent } from './components/footer/footer.component';
 
 @NgModule({
   declarations: [
@@ -15,7 +18,10 @@ import { TableComponent } from './components/table/table.component';
     HeaderComponent,
     DashboardComponent,
     AboutComponent,
-    TableComponent
+    TableComponent,
+    TestFormComponent,
+    SectionFormComponent,
+    FooterComponent
   ],
   imports: [
     BrowserModule,

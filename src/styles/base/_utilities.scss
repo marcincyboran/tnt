@@ -28,10 +28,18 @@
   margin: 0;
 }
 
-.u-no-padding {
-  padding: 0;
+.u-pad-bot-0 {
+  padding-bottom: 0;
 }
 
 .u-overflow {
   overflow: hidden;
+}
+
+.u-center {
+  text-align: center;
+}
+
+.u-fixed-line-height {
+  line-height: 3rem;
 }

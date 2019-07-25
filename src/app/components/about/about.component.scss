@@ -10,7 +10,7 @@
   &__left,
   &__right {
     border-radius: var(--border-radius);
-    box-shadow: var(--box-shadow-default);
+    box-shadow: var(--box-shadow-gray);
     background-color: var(--color-white);
     overflow: hidden;
   }
@@ -43,7 +43,7 @@
   }
 
   &__right {
-    flex: 0 1 66%;
+    flex: 1;
     position: relative;
 
     &-header {

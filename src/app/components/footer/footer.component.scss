@@ -1,0 +1,75 @@
+.host {}
+
+.footer {
+    &__upper {
+        padding-top: 7.5rem;
+        padding-bottom: 4.5rem;
+        overflow: hidden;
+        background: url(./../../../assets/loop.png) no-repeat;
+        background-size: 31rem;
+        background-position: 63% bottom;
+    }
+
+    &__lower {
+        border-top: 1px solid var(--color-blue-lighter);
+    }
+
+    &__lower .container {
+        min-height: 9.5rem;
+        display: flex;
+        align-items: center;
+
+
+
+        & > *:not(:last-child) {
+            margin-right: 5rem;
+        }
+    }
+    &__list {
+        list-style: none;
+        display: flex;
+    }
+
+    &__item {
+        flex: 0 1 25%;
+
+        &--info,
+        &--contact {
+            margin-top: 4rem;
+        }
+
+        &--testarmy {
+            margin-top: 2rem;
+        }
+    }
+
+    &__social {
+        margin-top: 2rem;
+
+        svg {
+            height: 100%;
+            width: 100%;
+            padding: 5px;
+        }
+
+        & > * {
+            background-color: var(--color-yellow);
+            display: inline-block;
+            width: 2.4rem;
+            height: 2.4rem;
+            box-shadow: var(--box-shadow-yellow);
+            margin-right: 1.6rem;
+        }
+    }
+
+    &__logo-figure {
+        display: inline-block;
+        background-color: var(--color-blue-dark);
+        padding: 1.6rem 2rem;
+    }
+
+    &__logo {
+
+    }
+}
+

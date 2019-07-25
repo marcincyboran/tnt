@@ -7,7 +7,7 @@
     --color-blue-lighter: #8597ef;
     --color-blue-subtle: #f3f5fd;
     --color-blue-dark: #131c49;
-
+    
     --color-gray: #aeaeae;
     --color-gray-border: #d8d8d8;
     --color-gray-background: #f6f6f6;
@@ -18,9 +18,10 @@
     /* Shadows */
     --box-shadow-default: 0 5px 20px rgba(37,54,141,.1);
     --box-shadow-yellow: 0 10px 20px rgba(249,212,35,.2);
+    --box-shadow-gray: 0px 10px 30px rgba(174, 174, 174, 0.3);
 
     /* Borders */
-    --border-radius: 9px;
+    --border-radius: 1rem;
 
     /* Structures */
     --con-max-width: 121rem;
