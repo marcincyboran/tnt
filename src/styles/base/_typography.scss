@@ -239,8 +239,8 @@ input:-ms-input-placeholder {
   border-radius: 5rem; // overkill
   text-decoration: none;
   border: none;
+  box-shadow: var(--box-shadow-button);
   cursor: pointer;
-  transition: all .2s;
 
   &--full-width {
     width: 100%;
