@@ -11,6 +11,7 @@ import { TableComponent } from './components/table/table.component';
 import { TestFormComponent } from './components/test-form/test-form.component';
 import { SectionFormComponent } from './components/section-form/section-form.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { FormsModule } from '@angular/forms';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,8 @@ import { FooterComponent } from './components/footer/footer.component';
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    AppRoutingModule
+    AppRoutingModule,
+    FormsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

@@ -88,7 +88,7 @@
       color: var(--color-blue-lighter);
       text-decoration: none;
     }
-    
+
     &:hover,
     &:active {
       color: var(--color-yellow);
@@ -137,7 +137,6 @@ ul.list {
   font-size: 1.2rem;
   font-weight: 600;
   margin-top: 3rem;
-  margin-bottom: 4rem;
   padding-left: 3.5rem;
 
   input {
@@ -224,6 +223,10 @@ input:-ms-input-placeholder {
   font-weight: 600;
 } /* IE 10+ */
 
+button[type="submit"] {
+  margin-top: 4rem;
+}
+
 .button {
   @include centerBlock;
   position: relative;
@@ -251,4 +254,17 @@ input:-ms-input-placeholder {
     color: var(--color-red);
     font-size: 1.4rem;
     font-weight: 600;
+    margin-left: .5rem;
+    margin-top: .5rem;
+
+    &:first-child {
+      margin-top: 1rem;
+    }
+
+    svg {
+      display: inline-block;
+      width: .8em;
+      height: .8em;
+      margin-right: 1rem;
+    }
 }

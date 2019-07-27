@@ -24,8 +24,9 @@ export class TestFormComponent implements OnInit {
         this.switchState = (this.switchState === 'więcej') ? 'mniej' : 'więcej';
         this.checkbox.nativeElement.checked = !this.checkbox.nativeElement.checked;
     }
-    
-    onSubmit(form) {
-        console.log(form);
+
+    onSubmit(form: NgForm) {
+      if (!form.valid) { return; }
+      console.dir(form);
     }
 }

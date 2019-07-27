@@ -1,21 +1,42 @@
-<form>
+<form (ngSubmit)="onSubmit(myForm)" #myForm="ngForm">
     <h2 class="heading-secondary" [ngClass]="{'u-center u-mb-medium': centerHeading}" [ngStyle]="{'margin-bottom': (centerHeading) ? '4rem' : '2rem' }">Wypełnij test predyspozycji</h2>
     <label class="inputLabel" for="email">Adres e-mail</label>
-    <input 
+    <input
         id="email"
         type="email"
         name="email"
         placeholder="jan.kowalski@gmail.com"
-        required>
-    <!-- <div class="error">
-        <p>Niepoprawny format adresu email.</p>
-    </div> -->
+        required
+        email
+        ngModel
+        #email="ngModel"
+      >
+    <div class="error" *ngIf="email.invalid && email.touched">
+      <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+        <use xlink:href="assets/icons.svg#x-btn"></use>
+      </svg>
+      Niepoprawny format adresu email.
+    </div>
     <label class="custom-checkmark">
         <span>*TAK, chcę zapisać się do newslettera i otrzymywać informację o sekretach testerskich, webinarach i ofertach pracy na mój adres e-mail </span>
         <span class="terms" *ngIf="!moreTerms">, dlatego wyrażam zgodę na otrzymywanie informacji handlowych w rozumieniu ustawy oświadczeniu usług drogą elektroniczną wysyłanych przez TestArmy Group S.A. z siedzibą we Wrocławiu (53 -238), przy ul. Petuniowej 9/5, na podany przeze mnie adres mailowy. Zostałem/am poinformowany/a, że mogę wycofać tak udzieloną zgodę w dowolnym momencie, oraz że wycofanie zgody nie będzie miało wpływu na działania, które zostały podjęte przed tą czynnością. </span>
         <span class="more" (click)="onExpandTerms()">{{ switchState }}</span>
-        <input ngModel #checkbox type="checkbox" name="terms" id="terms" required>
+        <input
+          #checkbox
+          type="checkbox"
+          name="terms"
+          id="terms"
+          required
+          ngModel
+          #terms="ngModel"
+        >
         <span class="checkmark"></span>
     </label>
+    <div class="error" *ngIf="terms.invalid && terms.touched">
+        <svg viewBox="0 0 12 12" xmlns="http://www.w3.org/2000/svg">
+          <use xlink:href="assets/icons.svg#x-btn"></use>
+        </svg>
+        Zgoda jest wymagana do rozpoczęcia testu
+      </div>
     <button class="button" [ngClass]="{'button--full-width': fullButton }" type="submit">Rozpocznij test</button>
 </form>

@@ -3,7 +3,9 @@ section:not(.navigationBar__content) {
 }
 
 section.section-table {
+  position: relative;
   padding-bottom: 0;
+  z-index: 2;
 }
 
 section.section-form {
